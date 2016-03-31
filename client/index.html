@@ -7,12 +7,19 @@
   <body>
     <div ng-app="albumApp">
       <div ng-controller="albumController">
-        <p>{{x}}</p>
+        <div>
+          <p ng-repeat="photo in photos">
+            {{ photo.title }}
+          </p>
+        </div>
       </div>
     </div>
 
     <!-- Angular -->
     <script src="lib/angular/angular.js"></script>
+
+    <!-- Seed data -->
+    <script src="data/initialPhotos.js"></script>
 
     <!-- App scripts -->
     <script src="app/app.js"></script>
