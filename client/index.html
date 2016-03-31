@@ -7,11 +7,17 @@
   <body>
     <div ng-app="albumApp">
       <div ng-controller="albumController">
+
+        <!-- Selector -->
         <div>
           <p ng-repeat="photo in photos">
             {{ photo.title }}
           </p>
         </div>
+
+        <!-- ViewPort -->
+        <p>{{ currentPhoto.title }}</p>
+        <img ng-src="{{ currentPhoto.url }}" width="400" />
       </div>
     </div>
 
