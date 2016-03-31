@@ -1,9 +1,15 @@
 <!DOCTYPE html>
 <html>
-  <head>Photo Album</head>
-  <body>
+  <head>
+    <title>Photo Album</title>
+  </head>
 
-    <div ng-app="app"></div>
+  <body>
+    <div ng-app="albumApp">
+      <div ng-controller="albumController">
+        <p>{{x}}</p>
+      </div>
+    </div>
 
     <!-- Angular -->
     <script src="lib/angular/angular.js"></script>
