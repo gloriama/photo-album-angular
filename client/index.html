@@ -10,7 +10,7 @@
 
         <!-- Selector -->
         <div>
-          <p ng-repeat="photo in photos">
+          <p ng-repeat="photo in photos" ng-click="setCurrentPhoto(photo)">
             {{ photo.title }}
           </p>
         </div>
