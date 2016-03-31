@@ -1,0 +1,19 @@
+{
+  "name": "photo-album-angular",
+  "version": "1.0.0",
+  "authors": [
+    "Gloria Ma <gloria.ma@aya.yale.edu>"
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "angular": "~1.3.16",
+    "angular-route": "~1.3.16",
+    "angular-mocks": "~1.3.16"
+  },
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "client/lib"
+  ]
+}
