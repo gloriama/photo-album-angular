@@ -15,4 +15,12 @@ angular.module('albumApp', [])
     $scope.currrentRating = rating;
   };
 
+  $scope.addPhoto = function(title, url) {
+    $scope.photos.push({
+      title: title,
+      url: url,
+      rating: 0
+    });
+  };
+
 });

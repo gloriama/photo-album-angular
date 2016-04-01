@@ -9,6 +9,11 @@
       <div ng-controller="albumController">
         <p>Photo Album</p>
 
+        <!-- Adder -->
+        <input type="text" placeholder="Title" ng-model="title" />
+        <input type="text" placeholder="URL" ng-model="url" />
+        <input type="button" value="Submit" ng-click="addPhoto(title, url)" />
+
         <!-- Selector -->
         <div>
           <p ng-repeat="photo in photos" ng-click="setCurrentPhoto(photo)">
